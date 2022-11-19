@@ -1,0 +1,78 @@
+* 
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+  font-family: 'Roboto', sans-serif
+
+body
+  overflow-x: hidden
+
+.default-layout
+  background: black
+  min-height: 83.5vh
+
+.header
+  position: sticky
+  top: 0
+  z-index: 100
+
+.container
+  width: 100%
+  max-width: 1200px
+  margin: 0 auto
+
+.count
+  text-align: center
+  font-size: 100px
+  color: red
+
+.row
+  display: flex
+  justify-content: center
+  flex-wrap: wrap
+
+.hero-card
+  width: 100%
+  max-width: 200px
+  margin: 10px
+  transition: .4s
+  cursor: pointer
+  position: relative
+  overflow: hidden
+  &__
+    &hero-name
+      position: absolute
+      bottom: -100%
+      font-size: 25px
+      background: rgba(#000, 70%)
+      padding: 0 10px
+      color: white
+      width: 100%
+      transition: .4s
+      &.isActive
+        transition: .4s
+        bottom: 0
+    &image
+      width: 100%
+      height: 100%
+  &:hover
+    transition: .4s
+    z-index: 2
+    transform: scale(1.3)
+
+.hero-wrapper
+  position: relative
+
+.hero-vid
+  position: absolute
+  width: 100%
+  overflow: hidden
+  height: 90vh
+  min-height: 700px
+  right: -20%
+  top: 0
+
+.video
+  // transform: scale(1.3)
+  width: 100%
+  height: 100%
